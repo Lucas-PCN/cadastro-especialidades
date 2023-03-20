@@ -21,6 +21,8 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @Path("/professional")
+@Produces("application/json")
+@Consumes("application/json")
 public class ProfessionalController {
   @Inject
   private ProfessionalService professionalService;
